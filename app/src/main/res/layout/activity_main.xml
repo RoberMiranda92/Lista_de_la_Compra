@@ -10,7 +10,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/product"
-        android:width="150dp"
         android:textSize="30dp"/>
     <TextView
         android:layout_width="wrap_content"
@@ -25,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/TextoProducto"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignStart="@id/TextoProducto"
+        android:layout_alignLeft="@id/TextoProducto"
         android:layout_alignRight="@id/TextoProducto"
         android:layout_alignEnd="@id/TextoProducto"
         android:id="@+id/editText" />
@@ -47,10 +46,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText"
         android:text="@string/add"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@id/editText"
-        android:layout_alignEnd="@id/editText"/>
+        android:layout_alignStart="@id/TextoProducto"
+        android:layout_alignLeft="@id/TextoProducto"
+        android:layout_alignRight="@id/TextoProducto"
+        android:layout_alignEnd="@id/TextoProducto"/>
 
     <ListView
         android:id="@+id/listProductos"
